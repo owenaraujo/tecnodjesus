@@ -311,7 +311,7 @@ let content= [
         },
 
         {
-          unsplash: "/static/cbp.jpg",
+          unsplash: "/static/cbP.jpg",
           category: "hardware",
           title: "cambio de pin de carga",
           article: "",
