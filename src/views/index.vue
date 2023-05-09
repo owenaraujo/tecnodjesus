@@ -1,75 +1,25 @@
 
 
 <template>
-    <div>
-        <Nav></Nav>
-      
-      <div
-        id="progress"
-        class="h-1 bg-white shadow"
-        style="
-          background: linear-gradient(
-            to right,
-            #4dc0b5 var(--scroll),
-            transparent 0
-          );
-        "
-      ></div>
   
-      <div class="bg-white font-sans leading-normal tracking-normal">
-        <!-- <style>
-          --image--
-            > <div
-            class="container relative w-full max-w-6xl mx-auto bg-white bg-cover mt-8 rounded"
-            style=""
-            > </div
-            > <style
-            > .carousel-open:checked
-            + .carousel-item {
-            position: static;
-            opacity: 100;
-          }
-          .carousel-item {
-            -webkit-transition: opacity 0.6s ease-out;
-            transition: opacity 0.6s ease-out;
-          }
-          #carousel-1:checked ~ .control-1,
-          #carousel-2:checked ~ .control-2,
-          #carousel-3:checked ~ .control-3 {
-            display: block;
-          }
-          .carousel-indicators {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            bottom: 2%;
-            left: 0;
-            right: 0;
-            text-align: center;
-            z-index: 10;
-          }
-          #carousel-1:checked
-            ~ .control-1
-            ~ .carousel-indicators
-            li:nth-child(1)
-            .carousel-bullet,
-          #carousel-2:checked
-            ~ .control-2
-            ~ .carousel-indicators
-            li:nth-child(2)
-            .carousel-bullet,
-          #carousel-3:checked
-            ~ .control-3
-            ~ .carousel-indicators
-            li:nth-child(3)
-            .carousel-bullet {
-            color: #2b6cb0; /*Set to match the Tailwind colour you want the active one to be */
-          }
-        </style> -->
-        <!-- carusel -->
+    <div
+    class="
+  
+        
+        text-gray-600
+        work-sans
+        leading-normal
+        text-base
+        tracking-normal
+      "
+      style="background-color: #ebebeb;">
+      
+     
+  
+      <div class=" font-sans leading-normal tracking-normal">
+       
         <div
-          class="carousel relative container mx-auto mt-16"
+          class="carousel relative container mx-auto"
           style="max-width: 1600px"
         >
           <div class="carousel-inner relative overflow-hidden w-full">
@@ -83,7 +33,7 @@
               hidden=""
               checked="checked"
             />
-            <div class="carousel-item absolute opacity-0" style="height: 50vh">
+            <div class="carousel-item absolute opacity-0" style="height: 40vh">
               <div
                 class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
                 style="background-image: url('/static/reballing.jpg')"
@@ -113,7 +63,7 @@
             />
             <div
               class="carousel-item absolute opacity-0 bg-cover bg-right"
-              style="height: 50vh"
+              style="height: 40vh"
             >
               <div
                 class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-right"
@@ -145,7 +95,7 @@
               aria-hidden="true"
               hidden=""
             />
-            <div class="carousel-item absolute opacity-0" style="height: 50vh">
+            <div class="carousel-item absolute opacity-0" style="height: 40vh">
               <div
                 class="block h-full w-full mx-auto flex pt-6 md:pt-0 md:items-center bg-cover bg-bottom"
                 style="background-image: url('/static/soldadura.jpg')"
@@ -195,7 +145,7 @@
         </div>
   
         <!--Container-->
-        <div class="publicidad"></div>
+        
         <div
           class="container absolute z-40 md:max-w-3xl xl:max-w-5xl sm:max-w-lg mx-auto -mt-32"
           style="left: 0; right: 0"
@@ -250,7 +200,7 @@
           </div>
   
           <footer
-            class="container mx-auto bg-white bottom-0"
+            class="container mx-auto bottom-0"
             style="left: 0; right: 0; z-index: 120"
           >
             <h5 class="text-center">comunicate con nosotros</h5>
@@ -269,11 +219,13 @@
             </div>
           </footer>
         </div>
+      <div style="width: 100vw; height: 100vh; background-color: #ebebeb;"></div>
+
       </div>
     </div>
   </template>
 <script setup>
-import Nav from "../components/Nav.vue"
+
 
 function toWs() {
   let url = `https://api.whatsapp.com/send?phone=573505456465`;
